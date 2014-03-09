@@ -5,7 +5,9 @@ class Person
   end
   
   def tell_about
-    if @age >= 16 && @age < 18
+    if @age < 16 && @age >= 5
+      puts "#{@name} needs to stay in school"
+    elsif @age >= 16 && @age < 18
       puts "#{@name} can drive"
     elsif @age >= 18 && @age < 25
       puts "#{@name} can vote and smoke"
